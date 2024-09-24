@@ -4,8 +4,6 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
-!src/main/resources/application.properties.jar
-
 ### STS ###
 .apt_generated
 .classpath
@@ -20,6 +18,8 @@ target/
 *.iws
 *.iml
 *.ipr
+
+env.properties
 
 ### NetBeans ###
 /nbproject/private/
