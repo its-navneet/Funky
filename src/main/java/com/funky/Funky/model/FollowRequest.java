@@ -13,7 +13,6 @@ import lombok.AllArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class FollowRequest {
-
     @Id
     private String id;
 

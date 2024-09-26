@@ -2,6 +2,7 @@ package com.funky.Funky.model;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -16,6 +17,7 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @NoArgsConstructor
+@AllArgsConstructor
 public class User {
     @Id
     public String id;
@@ -29,6 +31,9 @@ public class User {
     private String email;
 
     @NotBlank
+    private String password;
+
+    @NotBlank
     @NumberFormat
     private int age;
 
@@ -37,6 +42,8 @@ public class User {
     private String phone;
 
     private String profile_pic;
+
+    private String[] followers;
 
     @NotBlank
     private LocalDateTime joining_time;
