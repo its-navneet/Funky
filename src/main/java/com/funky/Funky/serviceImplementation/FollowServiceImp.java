@@ -12,7 +12,7 @@ public class FollowServiceImp implements FollowService {
 
     @Override
     public void createFollowRequest(FollowRequest followRequest) {
-        followRequest.setSenderUserId();
+//        followRequest.setSenderUserId();
         followRequestRepositoy.save(followRequest);
     }
 
